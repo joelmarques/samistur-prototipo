@@ -68,7 +68,6 @@ body {
    padding:1em 0em ;
    color:white;}
 .main-w3{
-	 background: url(../images/bg1.jpg);
 	  background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -195,11 +194,11 @@ input.checked {
     margin:0em;
     text-align: center;
     font-size: 14px;
-    color: white;
+    color: #000;
     letter-spacing: 1px;
 }
 .copy p a{
-	  color:#33e8ff;
+	  color:#000;
 	  text-decoration:none;
       }
 .copy p a:hover{color:#fff;}
@@ -427,9 +426,9 @@ margin: 14px 0px;
 	 color:#000;
 	 margin:31px 0px;
 	 font-size:18px;
-	 font-weight:400;
-     border: 1px solid #8b5c7e;
-     padding:11px 11px;
+	 font-weight:700;
+     border: none;
+     padding:11px 36px;
 	 letter-spacing:1px;
 	 text-transform:uppercase;
      border-radius: 20px;
@@ -441,5 +440,33 @@ margin: 14px 0px;
 	-ms-transition: 0.5s all;
 	color: #fff;
     background: rgba(0, 0, 0, 0);
-		background-color: #8b5c7e;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    background-color: rgba(241, 217, 16, 0.92);
+}
+
+.main-w3 {
+    width: 30%;
+		background-color: rgba(255, 255, 255, 0.68);
+		margin-top: 110px;
+}
+
+input[type=email], input[type=password] {
+    border: none !important;
+    background: rgba(19, 19, 19, 0.99);
+}
+
+.icons span {
+    background: rgba(241, 217, 16, 0.92);
+    color: #fff;
+}
+
+.main-w3 .t-w3 {
+    color: rgba(241, 217, 16, 0.92);
+}
+
+h1 {
+    padding: 4px;
+    background-color: #013243;
+    font-family: none;
 }
