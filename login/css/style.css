@@ -419,3 +419,26 @@ margin: 14px 0px;
 }
 
 }
+
+.btn-login{
+	width:100%;
+	 background:#8b5c7e;
+	 outline:none;
+	 color:#000;
+	 margin:31px 0px;
+	 font-size:18px;
+	 font-weight:400;
+     border: 1px solid #8b5c7e;
+     padding:11px 11px;
+	 letter-spacing:1px;
+	 text-transform:uppercase;
+     border-radius: 20px;
+	 cursor:pointer;
+	 transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	color: #fff;
+    background: rgba(0, 0, 0, 0);
+}
