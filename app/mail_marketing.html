@@ -262,89 +262,117 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--main content start-->
 <section id="main-content">
 	<section class="wrapper">
-		   <!-- page start-->
-
+		<!-- page start-->
+		<div class="mail-w3agile">
         <div class="row">
-            <div class="col-sm-12 vec-wthree">
+            <div class="col-sm-3 com-w3ls">
                 <section class="panel">
-                    <header class="panel-heading">
-                        Mapa Mundial
-                        <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
-                         </span>
+                    <div class="panel-body">
+                        <a href="#"  class="btn btn-compose">
+                            Novo
+                        </a>
+                        <ul class="nav nav-pills nav-stacked mail-nav">
+                            <li><a href="#"> <i class="fa fa-envelope-o"></i> Enviados</a></li>
+                            <li><a href="#"> <i class="fa fa-certificate"></i> Importantes</a></li>
+                            <li><a href="#"> <i class="fa fa-file-text-o"></i> Rascunhos <span class="label label-info pull-right inbox-notification">3</span></a></a></li>
+                            <li><a href="#"> <i class="fa fa-trash-o"></i> Excluídos</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked labels-info ">
+                            <li> <h4>Clientes favoritos</h4> </li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-success"></i> Jonathan <p>20 excursões</p></a>  </li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-danger"></i> Claudia <p>18 excursões</p></a> </li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-muted "></i> Fernanda<p>15 excursões</p></a></li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-muted "></i> Felipe<p>12 excursões</p></a></li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-muted "></i> Andrea<p>9 excursões</p></a>  </li>
+                        </ul>
+                        <a href="#"> + Ver todos</a>
+
+                        <div class="inbox-body text-center inbox-action">
+                            <div class="btn-group">
+                                <a class="btn mini btn-default" href="javascript:;">
+                                    <i class="fa fa-power-off"></i>
+                                </a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn mini btn-default" href="javascript:;">
+                                    <i class="fa fa-cog"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-9 mail-w3agile">
+                <section class="panel">
+                    <header class="panel-heading wht-bg">
+                       <h4 class="gen-case"> Novo
+                           <form action="#" class="pull-right mail-src-position">
+                            <div class="input-append">
+                                <input type="text" class="form-control " placeholder="Buscar e-mail">
+                            </div>
+                        </form>
+                       </h4>
                     </header>
                     <div class="panel-body">
-                        <div id="world-vmap" style="width:100%; height: 400px;"></div>
+                        <div class="compose-btn pull-right">
+                            <button class="btn btn-primary btn-sm"><i class="fa fa-check"></i> Enviar</button>
+                            <button class="btn btn-sm"><i class="fa fa-times"></i> Descartar</button>
+                            <button class="btn btn-sm">Rascunho</button>
+                        </div>
+                        <div class="compose-mail">
+                            <form role="form-horizontal" method="post">
+                                <div class="form-group">
+                                    <label for="to" class="">Para:</label>
+                                    <input type="text" tabindex="1" id="to" class="form-control">
 
+                                    <div class="compose-options">
+                                        <a onclick="$(this).hide(); $('#cc').parent().removeClass('hidden'); $('#cc').focus();" href="javascript:;">Cc</a>
+                                        <a onclick="$(this).hide(); $('#bcc').parent().removeClass('hidden'); $('#bcc').focus();" href="javascript:;">Bcc</a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group hidden">
+                                    <label for="cc" class="">Cc:</label>
+                                    <input type="text" tabindex="2" id="cc" class="form-control">
+                                </div>
+
+                                <div class="form-group hidden">
+                                    <label for="bcc" class="">Bcc:</label>
+                                    <input type="text" tabindex="2" id="bcc" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject" class="">Assunto:</label>
+                                    <input type="text" tabindex="1" id="subject" class="form-control">
+                                </div>
+
+                                <div class="compose-editor">
+                                    <textarea class="wysihtml5 form-control" rows="9"></textarea>
+                                    <input type="file" class="default">
+                                </div>
+                                <div class="compose-btn">
+                                    <button class="btn btn-primary btn-sm"><i class="fa fa-check"></i> Enviar</button>
+                                    <button class="btn btn-sm"><i class="fa fa-times"></i> Descartar</button>
+                                    <button class="btn btn-sm">Rascunho</button>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
-        <div class="row">
-                <div class="col-sm-12 vec-wthree">
-                    <section class="panel">
-                        <header class="panel-heading">
-                           EUROPA
-                        <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
-                         </span>
-                        </header>
-                        <div class="panel-body">
 
-                            <div id="europe-vmap" style="width: 100%; height: 520px;"></div>
-
-
-                        </div>
-                    </section>
-                </div>
-            </div>
-        <div class="row">
-                <div class="col-sm-6 vec-wthree">
-                    <section class="panel">
-                        <header class="panel-heading">
-                            ASIA
-                        <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
-                         </span>
-                        </header>
-                        <div class="panel-body">
-
-
-                            <div id="asia-vmap" style="width: 100%; height: 520px;"></div>
-
-
-                        </div>
-                    </section>
-                </div>
-                <div class="col-sm-6 vec-wthree">
-                    <section class="panel">
-                        <header class="panel-heading">
-                            AUSTRALIA
-                        <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
-                         </span>
-                        </header>
-                        <div class="panel-body">
-
-
-                            <div id="australia-vmap" style="width: 100%; height: 520px;"></div>
-
-                        </div>
-                    </section>
-                </div>
-
-            </div>
         <!-- page end-->
-
+		 </div>
 </section>
+ <!-- footer -->
+  <!-- / footer -->
 </section>
 <!--main content end-->
 </section>
@@ -355,80 +383,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.nicescroll.js"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 <script src="js/jquery.scrollTo.js"></script>
-<script src="js/jquery.vmap.js"></script>
-<script src="js/jquery.vmap.world.js"></script>
-<script src="js/jquery.vmap.sampledata.js"></script>
-<script src="js/jquery.vmap.europe.js"></script>
-<script src="js/jquery.vmap.asia.js"></script>
-<script src="js/jquery.vmap.australia.js"></script>
-<script>
-    jQuery('#world-vmap').vectorMap({
-        map: 'world_en',
-        backgroundColor: null,
-        color: '#ffffff',
-        hoverOpacity: 0.7,
-        selectedColor: '#666666',
-        enableZoom: true,
-        borderWidth:1,
-        showTooltip: true,
-        values: sample_data,
-        scaleColors: ['#C8EEFF', '#006491'],
-        normalizeFunction: 'polynomial'
-    });
-</script>
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery('#europe-vmap').vectorMap({
-            map: 'europe_en',
-            backgroundColor: null,
-            color: '#ffffff',
-            borderWidth:1,
-            hoverOpacity: 0.7,
-            selectedColor: '#666666',
-            enableZoom: false,
-            showTooltip: false,
-            values: sample_data,
-            scaleColors: ['#C8EEFF', '#006491'],
-            normalizeFunction: 'polynomial'
-        });
-    });
-</script>
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery('#asia-vmap').vectorMap({
-            map: 'asia_en',
-            backgroundColor: null,
-            color: '#ffffff',
-            borderWidth:1,
-            hoverOpacity: 0.7,
-            selectedColor: '#666666',
-            enableZoom: false,
-            showTooltip: false,
-            values: sample_data,
-            scaleColors: ['#C8EEFF', '#006491'],
-            normalizeFunction: 'polynomial'
-        });
-    });
-</script>
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery('#australia-vmap').vectorMap({
-            map: 'australia_en',
-            backgroundColor: null,
-            color: '#ffffff',
-            borderWidth:1,
-            hoverOpacity: 0.7,
-            selectedColor: '#666666',
-            enableZoom: false,
-            showTooltip: false,
-            values: sample_data,
-            scaleColors: ['#C8EEFF', '#006491'],
-            normalizeFunction: 'polynomial'
-        });
-    });
-</script>
 </body>
 </html>
