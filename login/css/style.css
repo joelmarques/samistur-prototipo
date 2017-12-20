@@ -76,16 +76,17 @@ body {
     margin: 0em auto;
     border:rgba(23, 19, 19, 0.95);
     -webkit-box-shadow:0px 3px 58px 1px rgb(0, 0, 0);
--moz-box-shadow: 0px 3px 58px 1px rgb(0, 0, 0);
-box-shadow:0px 3px 58px 1px rgb(0, 0, 0);
-
+		-moz-box-shadow: 0px 3px 58px 1px rgb(0, 0, 0);
+		box-shadow:0px 3px 58px 1px rgb(0, 0, 0);
+		background-color: rgba(255, 255, 255, 0.55);
+		margin-top: 110px;
 }
 h2{text-align:center;}
 .t-w3{
     padding:0.5em 2em;
     font-size: 70px;
     letter-spacing: 3px;
-    color: #8b5c7e;
+    color: #2e3e4e;
 	}
 
 .login-w3ls{display:block;
@@ -102,10 +103,10 @@ h2{text-align:center;}
 	flex-basis:15%;
     height: 50px;
     display: block;
-    background: #8b5c7e;
+    background: #2e3e4e;
     text-align: center;
     line-height: 50px;
-    color: #000;
+    color: #fff;
 }
 
 input[type=email],input[type=password]{
@@ -194,8 +195,9 @@ input.checked {
     margin:0em;
     text-align: center;
     font-size: 14px;
-    color: #000;
+    color: #fff;
     letter-spacing: 1px;
+		font-family: none;
 }
 .copy p a{
 	  color:#000;
@@ -419,35 +421,26 @@ margin: 14px 0px;
 
 }
 
-.btn-login{
+.btn-login {
 	width:100%;
-	 background:#8b5c7e;
-	 outline:none;
-	 color:#000;
-	 margin:31px 0px;
-	 font-size:18px;
-	 font-weight:700;
-     border: none;
-     padding:11px 36px;
-	 letter-spacing:1px;
-	 text-transform:uppercase;
-     border-radius: 20px;
-	 cursor:pointer;
-	 transition: 0.5s all;
+	background:#2e3e4e;
+	color:#fff;
+	outline:none;
+	margin:31px 0px;
+	font-size:18px;
+	font-weight:700;
+  border: none;
+  padding:11px 36px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	cursor:pointer;
+	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-ms-transition: 0.5s all;
-	color: #fff;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 0px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-    background-color: #ac9e26;
-}
-
-.main-w3 {
-		background-color: rgba(255, 255, 255, 0.55);
-		margin-top: 93px;
+  border-radius: 0px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 input[type=email], input[type=password] {
@@ -456,17 +449,8 @@ input[type=email], input[type=password] {
 		color: #fff;
 }
 
-.icons span {
-    background: #ac9e26;
-    color: #fff;
-}
-
-.main-w3 .t-w3 {
-    color: #ac9e26;
-}
-
 h1 {
     padding: 4px;
-    background-color: rgba(1, 50, 67, 0.74);
+    background-color: rgba(7,55,99,1.00);
     font-family: none;
 }
