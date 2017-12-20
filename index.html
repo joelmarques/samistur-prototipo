@@ -1,55 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-<title>Samistur do Brasil</title>
-<link href="app/images/shortcut.ico" rel="shortcut icon">
-	<!-- Meta tags -->
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Jolly Login Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- Meta tags -->
-
-
-<!-- font-awesome icons -->
-   <link rel="stylesheet" href="login/css/font-awesome.min.css" />
-
-<!-- //font-awesome icons -->
-<!--stylesheets-->
-<link href="login/css/style.css" rel='stylesheet' type='text/css' media="all">
-<!--//style sheet end here-->
-
-<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>Samistur do Brasil</title>
+  <link href="images/shortcut.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+  <div>
+    <img id="background" src="images/b1.jpg" alt="" title="" />
+    <div class="form">
+      <div class="thumbnail"><img src="images/logo.png"></div>
+      <form class="login-form">
+        <input type="text" placeholder="Usuário"/>
+        <input type="password" placeholder="Senha"/>
+        <button type="button" onclick="Entrar();">Entrar</button>
+        <p class="message"> <a href="http://www.samistur.com.br" target="_blank">www.samistur.com.br</a></p>
+      </form>
+    </div>
 
-<h1>Samistur do Brasil</h1>
+  </div>
 
-<div class="main-w3">
-        <h2><span class="fa fa-user t-w3" aria-hidden="true"></span></h2>
-     <div class="login-w3ls">
-         <div class="icons">
-
-		     <input type="email" name="email" placeholder="Usuário">
-			 <span class="fa fa-user" aria-hidden="true"></span>
-          <div class="clear"></div>
-		</div>
-		 <div class="icons">
-
-				<input type="password" name="password" placeholder="Senha">
-				<span class="fa fa-key" aria-hidden="true"></span>
-		         <div class="clear"></div>
-		</div>
-	     <div class="btnn">
-						<a href="app/index.html" class="btn-login">Entrar</a>
-        </div>
-     </div>
-
- </div>
-
-    <div class="copy">
-    <p>&copy;2017 Samistur do Brasil. Todos os direitos reservados | Desenvolvido por <a href="http://www.samistur.com.br" target="_blank">Samistur</a>
-</div>
+  <script>
+    function Entrar() {
+      window.location = "https://joelmarques.github.io/samistur-prototipo/app/index.html";
+    }
+  </script>
 </body>
 </html>
