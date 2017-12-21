@@ -190,11 +190,13 @@
 }
 @media (max-width: 479px) {
     body{
-        margin-top:80px !important;
+        margin-top:0px !important;
+    }
+    .logo{
+      display: none;
     }
     .header{
         position: relative !important;
-
     }
     .merge-header{
         margin-right: 0px !important;
@@ -211,6 +213,7 @@
     }
     .top-nav{
         margin-bottom: 20px;
+        margin-top: 8px;
     }
     .top-menu{
         margin-right: 10px;
@@ -329,5 +332,3 @@
         display: inline-block;
     }
 }
-
-
