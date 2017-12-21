@@ -189,6 +189,12 @@
 
 }
 @media (max-width: 479px) {
+  .search{
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
     body{
         margin-top:0px !important;
     }
@@ -197,6 +203,7 @@
     }
     .header{
         position: relative !important;
+        height: 82px;
     }
     .merge-header{
         margin-right: 0px !important;
@@ -206,14 +213,16 @@
         float: none;
         position: fixed;
         top: 0px;
-        z-index: 1005;
+        z-index: 0;
     }
     .sidebar-toggle-box{
         right: 10px;
     }
     .top-nav{
         margin-bottom: 20px;
-        margin-top: 8px;
+        margin-top: -32px;
+        position: relative;
+        left: -32px;
     }
     .top-menu{
         margin-right: 10px;
