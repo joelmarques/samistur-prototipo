@@ -37,6 +37,7 @@ body {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 .form .thumbnail {
   margin: 0 auto 30px;
@@ -69,7 +70,13 @@ body {
   color: #000;
   border: none;
   border-bottom: 1px solid rgba(255,0,0,1.00);
+  border-radius: 0;
 }
+
+.form input:focus, input:hover {
+  border-bottom: 2px solid rgba(255,0,0,1.00);
+}
+
 .form button {
   outline: 0;
   background: #2e3e4e;
@@ -85,6 +92,7 @@ body {
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  margin-top: 25px;
 }
 .form .message {
   margin: 15px 0 0;
