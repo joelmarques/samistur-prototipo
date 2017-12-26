@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 <title>Samistur do Brasil</title>
+<link href="images/shortcut.ico" rel="shortcut icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -20,6 +21,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/morris.css" type="text/css"/>
 <!-- calendar -->
 <link rel="stylesheet" href="css/monthly.css">
+
+<link href="css/pickList.css"  rel="stylesheet">
+
 <!-- //calendar -->
 <!-- //font-awesome icons -->
 <script src="js/jquery2.0.3.min.js"></script>
@@ -171,7 +175,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="dropdown-menu extended logout">
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Perfil</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Configuracoes</a></li>
-                <li><a href="https://joelmarques.github.io/samistur-prototipo/"><i class="fa fa-key"></i> Sair</a></li>
+                <li><a href="../index.html"><i class="fa fa-key"></i> Sair</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->
@@ -196,33 +200,65 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 <li class="sub-menu">
                     <a href="javascript:;">
+                        <i class="fa fa-laptop"></i>
+                        <span>Cadastros</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="#">Empresa</a></li>
+
+                        <li><a href="#">Colaboradores</a>
+                          <ul class="sub">
+                            <li><a href="#">Vendedores</a></li>
+                            <li><a href="#">Motoristas</a></li>
+                            <li><a href="#">Guias</a></li>
+                          </ul>
+                        </li>
+
+                        <li><a href="#">Transportes</a></li>
+                        <li><a href="#">Itens de Checagem</a></li>
+                        <li><a href="#">Fornecedores</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Moedas</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="clientes.html">
+                        <i class="fa fa-smile-o"></i>
+                        <span>Clientes</span>
+                    </a>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
                         <i class="fa fa-plane"></i>
                         <span>Excursões</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="clientes.html">Clientes</a></li>
                         <li><a href="excursoes.html">Excursões</a></li>
-                        <li><a href="fotos.html">Fotos</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-truck"></i>
-                        <span>Fretamentos</span>
+                        <span>Fretes</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="#">Motoristas</a></li>
-                        <li><a href="#">Transportes</a></li>
-                        <li><a href="#">Itens de Checagem</a></li>
+                        <li><a href="#">Fretamentos</a></li>
+                        <li><a href="#">Abastecimentos</a></li>
+                        <li><a href="#">Manutenções</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-money"></i>
-                        <span>Pagamentos</span>
+                        <span>Financeiro</span>
                     </a>
                     <ul class="sub">
                         <li><a href="#">Gerar pagamento</a></li>
+                        <li><a href="#">Emitir recibo</a></li>
+                        <li><a href="#">Prestação de contas</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
@@ -231,9 +267,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span>Relatorios</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="#">Manutenções</a></li>
-                        <li><a href="#">Resumo Financeiro</a></li>
-                        <li><a href="#">Agenda por Transporte</a></li>
+                        <li><a href="#">Pagamentos a receber por cliente</a></li>
+                        <li><a href="#">Pagamentos recebidos por cliente</a></li>
+                        <li><a href="#">Manutenções por transporte</a></li>
+                        <li><a href="#">Agendas por transporte</a></li>
+                        <li><a href="#">Resumo financeiro por excursão</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
@@ -252,6 +290,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </a>
                     <ul class="sub">
                         <li><a href="mapas.html">Mapa Mundial</a></li>
+                        <li><a href="fotos.html">Fotos</a></li>
                     </ul>
                 </li>
             </ul>            </div>
@@ -265,12 +304,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="table-agile-info">
   <div class="panel panel-default">
     <div class="panel-heading">
-      Excursoes
+      Excursões
     </div>
     <div class="row w3-res-tb">
       <div class="col-sm-5 m-b-xs">
         <a href="#myModal" data-toggle="modal" class="btn btn-success">
-            Nova excursao
+            Nova excursão
         </a>
       </div>
       <div class="col-sm-4">
@@ -290,6 +329,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <tr>
             <th>Excursão</th>
             <th>Data</th>
+            <th>Valor</th>
             <th>Status</th>
             <th style="width:30px;"></th>
           </tr>
@@ -298,7 +338,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <tr>
             <td>Reveillon São Luis</td>
             <td><span class="text-ellipsis">29/12/2017 à 02/01/2018</span></td>
-            <td><span class="text-ellipsis">Em progresso</span></td>
+            <td><span class="text-ellipsis">R$ 2.500,00</span></td>
+            <td><span class="text-ellipsis">Em progresso (85%)</span></td>
             <td>
               <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
             </td>
@@ -306,7 +347,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <tr>
             <td>Reveillon Fortaleza</td>
             <td>27/12/2017 à 02/01/2018</td>
-            <td>Em progresso</td>
+            <td>R$ 1.800,00</td>
+            <td>Em progresso (90%)</td>
             <td>
               <a href="" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
             </td>
@@ -314,6 +356,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <tr>
             <td>Fortaleza com Jericoacoara</td>
             <td>09 à 16/01/2018</td>
+            <td>R$ 1.800,00</td>
             <td>Nova</td>
             <td>
               <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
@@ -322,6 +365,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <tr>
             <td>Sudeste e Sul Fascinante</td>
             <td><span class="text-ellipsis">03 à 22/01/2018</span></td>
+            <td><span class="text-ellipsis">R$ 2.700,00</span></td>
             <td><span class="text-ellipsis">Cancelada</span></td>
             <td>
               <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
@@ -358,23 +402,74 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="modal-content">
         <div class="modal-header">
             <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-            <h4 class="modal-title">Cadastrar nova excursao</h4>
+            <h4 class="modal-title">Cadastrar nova excursão</h4>
         </div>
         <div class="modal-body">
 
             <form role="form">
                 <div class="form-group">
-                    <label for="name">Excursão</label>
-                    <input type="text" class="form-control" id="name" placeholder="Nome">
+                    <label>Excursão</label>
+                    <input type="text" class="form-control">
                 </div>
+
+                <div class="form-group ">
+                    <label>Itinerário</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Data</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="E-mail">
+                    <label>Hora saida</label>
+                    <input type="text" class="form-control">
                 </div>
+
                 <div class="form-group">
-                    <label for="phone">Status</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Telefone">
+                    <label>Data saida</label>
+                    <input type="text" class="form-control">
                 </div>
+
+                <div class="form-group">
+                    <label>Data chegada</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Valor por pessoa (R$)</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Maximo de parcelas</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Transporte</label>
+                  <select class="form-control m-bot15">
+                      <option>Selecione</option>
+                      <option>Samantha II (52 Lugares)</option>
+                      <option>Samantha III (57 Lugares)</option>
+                      <option>Arara (52 Lugares)</option>
+                      <option>Sophia (52 Lugares)</option>
+                      <option>Guará (44 Lugares)</option>
+                      <option>Mico (52 Lugares)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Motorista</label>
+                  <select class="form-control m-bot15">
+                      <option>Selecione</option>
+                      <option>Gabriel</option>
+                      <option>Fernando</option>
+                      <option>Alexandra</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Guias</label>
+                  <div id="pickList"></div>
+                </div>
+
                 <button type="submit" class="btn btn-success">Salvar</button>
             </form>
         </div>
@@ -391,5 +486,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.nicescroll.js"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 <script src="js/jquery.scrollTo.js"></script>
+<script src="js/pickList.js"></script>
+
+<script>
+         var val = {
+            01: {id: 01, text: 'Isis'},
+            02: {id: 02, text: 'Sophia'},
+            03: {id: 03, text: 'Alice'},
+            04: {id: 04, text: 'Isabella'},
+            05: {id: 05, text: 'Manuela'},
+            06: {id: 06, text: 'Laura'},
+            07: {id: 07, text: 'Luiza'},
+            08: {id: 08, text: 'Valentina'},
+            09: {id: 09, text: 'Giovanna'},
+            10: {id: 10, text: 'Maria Eduarda'},
+            11: {id: 11, text: 'Helena'},
+            12: {id: 12, text: 'Beatriz'},
+            13: {id: 13, text: 'Maria Luiza'},
+            14: {id: 14, text: 'Lara'},
+            15: {id: 15, text: 'Julia'}
+         };
+         var pick = $("#pickList").pickList({data: val});
+         $("#getSelected").click(function () {
+            console.log(pick.getValues());
+         });
+      </script>
 </body>
 </html>

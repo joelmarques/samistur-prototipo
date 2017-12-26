@@ -1,0 +1,69 @@
+
+
+.onibus {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 5px;
+    background-color: #a5aaad;
+    padding: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+.poltrona {
+  background-color: #fff;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 15px;
+  padding-left: 5px !important;
+  padding-top: 2px !important;
+  width: 100%;
+}
+
+.poltrona:hover {
+ background-color: #DCEDC8;
+}
+
+.corredor {
+  margin-bottom: -5px;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.tv-esquerda {
+ text-align: left !important;
+ padding-left: 10px !important;
+}
+
+.tv-direita {
+ text-align: right !important;
+ padding-right: 10px !important;
+}
+
+.escada {
+ text-align: center !important;
+ background-color: rgba(255, 255, 255, 0.8) !important;
+ padding: 10px 0;
+}
+
+.frigobar {
+ text-align: center !important;
+ background-color: rgba(255, 255, 255, 0.8) !important;
+ padding: 10px 0;
+}
+
+.ocupada {
+ background-color: #ccc !important;
+}
+
+.wc {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.escada-trazeira {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}

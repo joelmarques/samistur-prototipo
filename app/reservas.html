@@ -21,6 +21,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/morris.css" type="text/css"/>
 <!-- calendar -->
 <link rel="stylesheet" href="css/monthly.css">
+
+<link href="css/pickList.css"  rel="stylesheet">
+
+<link href="css/onibus.css" rel="stylesheet"/>
+
 <!-- //calendar -->
 <!-- //font-awesome icons -->
 <script src="js/jquery2.0.3.min.js"></script>
@@ -301,12 +306,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="table-agile-info">
   <div class="panel panel-default">
     <div class="panel-heading">
-      Clientes
+      Reservas
     </div>
     <div class="row w3-res-tb">
       <div class="col-sm-5 m-b-xs">
         <a href="#myModal" data-toggle="modal" class="btn btn-success">
-            Novo cliente
+            Nova reserva
         </a>
       </div>
       <div class="col-sm-4">
@@ -324,69 +329,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <table class="table table-striped b-t b-light">
         <thead>
           <tr>
-            <th>Nome</th>
-            <th>E-mail</th>
-            <th>Telefone</th>
+            <th>Excursão</th>
+            <th>Passageiros</th>
+            <th>Responsável</th>
+            <th>Status</th>
             <th style="width:30px;"></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Rafaela Souza</td>
-            <td><span class="text-ellipsis">rafaela@mail.com</span></td>
-            <td><span class="text-ellipsis">(91) 9.2354-2345</span></td>
+            <td>Reveillon São Luis 29/12/2017 à 02/01/2018</td>
+            <td><span class="text-ellipsis">Rafaela Souza</span></td>
+            <td><span class="text-ellipsis">Rafaela Souza</span></td>
+            <td><span class="text-ellipsis">Nova</span></td>
             <td>
-              <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i> </a>
+              <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
             </td>
           </tr>
           <tr>
-            <td>Felipe Andrade</td>
-            <td>felipe@mail.com</td>
-            <td>(91) 9.8243-8635</td>
+            <td>Reveillon Fortaleza 27/12/2017 à 02/01/2018</td>
+            <td>Felipe Andrade, Henrique Igreja</td>
+            <td>Paloma Duarte (mae)</td>
+            <td>Confirmada</td>
             <td>
               <a href="" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
             </td>
           </tr>
           <tr>
-            <td>Claudia Santos</td>
-            <td>claudia@mail.com</td>
-            <td>(91) 9.8835-5436</td>
+            <td>Fortaleza com Jericoacoara 09 à 16/01/2018</td>
+            <td>Andrea Andrade</td>
+            <td>Andrea Andrade</td>
+            <td>Paga</td>
             <td>
               <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
             </td>
           </tr>
           <tr>
-            <td>Paloma Duarte</td>
-            <td><span class="text-ellipsis">paloma@mail.com</span></td>
-            <td><span class="text-ellipsis">(91) 9.2354-2345</span></td>
+            <td>Sudeste e Sul Fascinante 03 à 22/01/2018</td>
+            <td><span class="text-ellipsis">Joel Marques</span></td>
+            <td><span class="text-ellipsis">Joel Marques</span></td>
+            <td><span class="text-ellipsis">Cancelada</span></td>
             <td>
               <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
             </td>
           </tr>
-          <tr>
-            <td>Joel Marques</td>
-            <td><span class="text-ellipsis">joel@mail.com</span></td>
-            <td><span class="text-ellipsis">(91) 9.2354-2345</span></td>
-            <td>
-              <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Henrique Igreja</td>
-            <td><span class="text-ellipsis">henrique@mail.com</span></td>
-            <td><span class="text-ellipsis">(91) 9.2354-2345</span></td>
-            <td>
-              <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-            </td>
-          </tr>
-          <tr>
-              <td>Andrea Andrade</td>
-            <td><span class="text-ellipsis">andrea@mail.com</span></td>
-            <td><span class="text-ellipsis">(91) 9.2354-2345</span></td>
-            <td>
-              <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-            </td>
-          </tr>
+
         </tbody>
       </table>
     </div>
@@ -394,7 +381,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="row">
 
         <div class="col-sm-5 text-center">
-          <small class="text-muted inline m-t-sm m-b-sm">Exibindo 7 de 50 clientes</small>
+          <small class="text-muted inline m-t-sm m-b-sm">Exibindo 4 de 20 excursões</small>
         </div>
         <div class="col-sm-7 text-right text-center-xs">
           <ul class="pagination pagination-sm m-t-none m-b-none">
@@ -413,46 +400,149 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 
 <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-<div class="modal-dialog">
+<div class="modal-dialog modal-reserva">
     <div class="modal-content">
         <div class="modal-header">
             <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-            <h4 class="modal-title">Cadastrar novo cliente</h4>
+            <h4 class="modal-title">Cadastrar nova reserva</h4>
         </div>
         <div class="modal-body">
 
             <form role="form">
+
+              <div class="form-group">
+                <label>Excursão</label>
+                <select class="form-control m-bot15">
+                    <option>Selecione</option>
+                    <option>Reveillon São Luis 29/12/2017 à 02/01/2018</option>
+                    <option>Reveillon Fortaleza 27/12/2017 à 02/01/2018</option>
+                    <option>Fortaleza com Jericoacoara 09 à 16/01/2018</option>
+                    <option>Sudeste e Sul Fascinante 03 à 22/01/2018</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Passageiros</label>
+                <div id="pickList"></div>
+              </div>
+
+              <div class="form-group">
+                <label>Poltronas</label>
+                <div class="onibus">
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">01</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">02</div>
+                  <div class="corredor tv-esquerda">TV</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">04</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">03</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">05</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">06</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">08</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">07</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">09</div>
+                  <div class="poltrona ocupada" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">10</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">12</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">11</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">13</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">14</div>
+                  <div class="corredor"></div>
+                  <div class="escada">ESCADA</div>
+                  <div class="escada"></div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">17</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">18</div>
+                  <div class="corredor tv-direita">TV</div>
+                  <div class="frigobar">FRIGOBAR</div>
+                  <div class="frigobar"></div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">21</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">22</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona ocupada" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">16</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">15</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">25</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">26</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">20</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">19</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">29</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">30</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">24</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">23</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">33</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">34</div>
+                  <div class="corredor tv-esquerda">TV</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">28</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">27</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">37</div>
+                  <div class="poltrona ocupada" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">38</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">32</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">31</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">41</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">42</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">36</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">35</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">43</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">44</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">40</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">39</div>
+
+                  <div class="wc">WC</div>
+                  <div style="background-color: #fff;"></div>
+                  <div class="corredor"></div>
+                  <div style="background-color: #fff;"></div>
+                  <div class="escada-trazeira">ESCADA</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">45</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">46</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">48</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">47</div>
+
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">49</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">50</div>
+                  <div class="corredor"></div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">51</div>
+                  <div class="poltrona" onClick="this.className=='poltrona' ? this.className='poltrona ocupada' : this.className='poltrona'">52</div>
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Status</label>
+                <select class="form-control m-bot15">
+                    <option>Selecione</option>
+                    <option>Nova</option>
+                    <option>Confirmada</option>
+                    <option>Paga</option>
+                    <option>Cancelada</option>
+                </select>
+              </div>
+
+                <div class="form-group ">
+                    <label>Observações</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+
                 <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" class="form-control" id="name" placeholder="Nome">
+                    <label>Valor Total</label>
+                    <input type="text" class="form-control" disabled value="R$ 2.400,00">
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="E-mail">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefone</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Telefone">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputFile">Foto</label>
-                    <input type="file" id="exampleInputFile3">
-                    <p class="help-block">Foto do cliente</p>
-                </div>
-                <div class="form-group">
-                    <label for="inputSuccess">Tamanho da camisa</label>
-                    <select class="form-control m-bot15">
-                        <option>Selecione</option>
-                        <option>P</option>
-                        <option>M</option>
-                        <option>G</option>
-                    </select>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Ativo
-                    </label>
-                </div>
+
                 <button type="submit" class="btn btn-success">Salvar</button>
             </form>
         </div>
@@ -469,5 +559,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.nicescroll.js"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 <script src="js/jquery.scrollTo.js"></script>
+<script src="js/pickList.js"></script>
+
+<script>
+         var val = {
+            01: {id: 01, text: 'Isis'},
+            02: {id: 02, text: 'Paloma Duarte'},
+            03: {id: 03, text: 'Felipe Andrade (Paloma Duarte)'},
+            04: {id: 04, text: 'Henrique Igreja (Paloma Duarte)'},
+            05: {id: 05, text: 'Manuela'},
+            06: {id: 06, text: 'Laura'},
+            07: {id: 07, text: 'Luiza'},
+            08: {id: 08, text: 'Valentina'},
+            09: {id: 09, text: 'Giovanna'},
+            10: {id: 10, text: 'Maria Eduarda'},
+            11: {id: 11, text: 'Helena'},
+            12: {id: 12, text: 'Beatriz'},
+            13: {id: 13, text: 'Maria Luiza'},
+            14: {id: 14, text: 'Lara'},
+            15: {id: 15, text: 'Julia'}
+         };
+         var pick = $("#pickList").pickList({data: val});
+         $("#getSelected").click(function () {
+            console.log(pick.getValues());
+         });
+      </script>
 </body>
 </html>
